@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +39,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.emojilist{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 20px 35%;
+}
+.emojilist li{
+  cursor: pointer;
+  font-size:3rem;
+}
+
+.header{
+  padding: 40px;
+  background-color: rgb(255, 191, 28);
+}
+
+.gameDesc{
+  padding: 60px 0 20px 0;
+  font-size: 1.4rem;
+}
+.inputcode{
+  padding: 10px 5px;
+  border-radius: 7px;
+  width: 250px;
+}
+.gameAction{
+  padding: 20px 0;
+  font-weight: 600;
+}
+.outputMessage{
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 20px 0;
 }
