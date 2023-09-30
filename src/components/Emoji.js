@@ -15,11 +15,10 @@ const Emoji = () => {
         "😇": "Smiling Face with Halo",
         "🤐": "Zipper-Mouth Face",
       };
-
+    const emojiKeys = Object.keys(emojiDictionary);
     const [message, setMessage] = useState("")
     const handleChange = event => {
         let value = event.target.value;
-        console.log(value.length);
         if(emojiDictionary[value]){
             setMessage(emojiDictionary[value]);
         } else if(value.length == 0){
@@ -38,15 +37,9 @@ const Emoji = () => {
             <p className="gameAction">Click on emoji to know its meaning</p>
             
            <ul className="emojilist">
-            <li>😀</li>
-            <li>😁</li>
-            <li>😂</li>
-            <li>😃</li>
-            <li>😈</li>
-            <li>😍</li>
-            <li>😜</li>
-            <li>😜</li>
-            <li>😳</li>
+            {
+                emojiKeys
+            }
            </ul>
         </div>
     )
