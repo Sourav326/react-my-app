@@ -16,6 +16,7 @@ const Emoji = () => {
         "🤐": "Zipper-Mouth Face",
       };
     const emojiKeys = Object.keys(emojiDictionary);
+    
     const [message, setMessage] = useState("")
     const handleChange = event => {
         let value = event.target.value;
@@ -37,9 +38,9 @@ const Emoji = () => {
             <p className="gameAction">Click on emoji to know its meaning</p>
             
            <ul className="emojilist">
-            {
+            <li>{
                 emojiKeys
-            }
+            }</li>
            </ul>
         </div>
     )
